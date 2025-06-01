@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fdf6f9 0%, #f0e6f7 100%);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.profile-title {
+    font-size: 2.5rem;
+    color: #88c9bf;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    transition: all 0.3s ease;
+}
+
+.profile-title:hover {
+    transform: translateY(-5px);
+    text-shadow: 0 5px 15px rgba(136, 201, 191, 0.3);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #aec6cf;
+    margin: 0 auto 30px;
+    display: block;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image:hover {
+    transform: scale(1.08) rotate(5deg);
+    box-shadow: 0 20px 40px rgba(174, 198, 207, 0.4);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.game-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #aec6cf 0%, #88c9bf 100%);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(136, 201, 191, 0.3);
+}
+
+.game-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(136, 201, 191, 0.4);
+    background: linear-gradient(135deg, #88c9bf 0%, #aec6cf 100%);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.skill-title {
+    font-size: 1.4rem;
+    color: #88c9bf;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.skill-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cat-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.cat-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #aec6cf;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cat-image:hover {
+    transform: scale(1.1) rotate(5deg);
+    border-color: #88c9bf;
+    box-shadow: 0 8px 20px rgba(174, 198, 207, 0.3);
+}
+
+.social-section {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+.social-title {
+    font-size: 1.8rem;
+    color: #88c9bf;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.social-links i {
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.fab.fa-facebook {
+    color: #1877f2;
+}
+
+.fab.fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fab.fa-twitch {
+    color: #9146ff;
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 700px;
+        padding: 18px;
+    }
+    
+    .profile-title {
+        font-size: 2.2rem;
+    }
+    
+    .content-grid {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        max-width: 500px;
+        padding: 16px;
+    }
+    
+    .profile-title {
+        font-size: 2rem;
+    }
+    
+    .profile-image {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .intro-text {
+        font-size: 1.1rem;
+    }
+    
+    .skill-card {
+        padding: 25px;
+    }
+    
+    .social-links {
+        gap: 20px;
+    }
+    
+    .social-links a {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .social-links i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        max-width: 300px;
+        padding: 15px;
+    }
+    
+    .profile-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .profile-image {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 20px;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+    
+    .game-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .skill-card {
+        padding: 20px;
+    }
+    
+    .skill-title {
+        font-size: 1.2rem;
+    }
+    
+    .skill-description {
+        font-size: 1rem;
+    }
+    
+    .cat-gallery {
+        gap: 12px;
+    }
+    
+    .cat-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .social-title {
+        font-size: 1.5rem;
+    }
+    
+    .social-links {
+        gap: 15px;
+    }
+    
+    .social-links a {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .social-links i {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 961px) {
+    .content-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+    }
+    
+    .container {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .profile-title {
+        font-size: 3rem;
+    }
+    
+    .intro-text {
+        font-size: 1.3rem;
+    }
+}
